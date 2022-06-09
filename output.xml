@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 13:34:57.195" rpa="false" schemaversion="3">
+<suite id="s1" name="Form" source="D:\Advance_Robot_Python\Robot Framework_Workshop_4_Basic Input Form\form.robot">
+<test id="s1-t1" name="1.Open Browser" line="6">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>file:///D:/Advance_Robot_Python/Robot%20Framework_Workshop_4_Basic%20Input%20Form/ep01_small_excercise.html</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220609 13:34:57.379" level="INFO">Opening browser 'Chrome' to base url 'file:///D:/Advance_Robot_Python/Robot%20Framework_Workshop_4_Basic%20Input%20Form/ep01_small_excercise.html'.</msg>
+<status status="PASS" starttime="20220609 13:34:57.379" endtime="20220609 13:34:58.990"/>
+</kw>
+<status status="PASS" starttime="20220609 13:34:57.378" endtime="20220609 13:34:58.991"/>
+</test>
+<test id="s1-t2" name="2.Input Data" line="8">
+<kw name="Input Text" library="Selenium2Library">
+<arg>//input[@id="username-box"]</arg>
+<arg>Napaphorn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220609 13:34:59.000" level="INFO">Typing text 'Napaphorn' into text field '//input[@id="username-box"]'.</msg>
+<status status="PASS" starttime="20220609 13:34:58.996" endtime="20220609 13:34:59.173"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//div[@v="password"]/input</arg>
+<arg>12345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220609 13:34:59.174" level="INFO">Typing text '12345678' into text field '//div[@v="password"]/input'.</msg>
+<status status="PASS" starttime="20220609 13:34:59.174" endtime="20220609 13:34:59.268"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//input[@doppio="nickname"]</arg>
+<arg>Aoy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220609 13:34:59.270" level="INFO">Typing text 'Aoy' into text field '//input[@doppio="nickname"]'.</msg>
+<status status="PASS" starttime="20220609 13:34:59.269" endtime="20220609 13:34:59.363"/>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<arg>name=com</arg>
+<arg>Doppio</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220609 13:34:59.365" level="INFO">Selecting options from selection list 'name=com' by label Doppio.</msg>
+<status status="PASS" starttime="20220609 13:34:59.364" endtime="20220609 13:34:59.424"/>
+</kw>
+<kw name="Select Checkbox" library="Selenium2Library">
+<arg>name=vehicle1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220609 13:34:59.426" level="INFO">Selecting checkbox 'name=vehicle1'.</msg>
+<status status="PASS" starttime="20220609 13:34:59.425" endtime="20220609 13:34:59.502"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//button[@id="use-me"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220609 13:34:59.503" level="INFO">Clicking element '//button[@id="use-me"]'.</msg>
+<status status="PASS" starttime="20220609 13:34:59.502" endtime="20220609 13:34:59.546"/>
+</kw>
+<status status="PASS" starttime="20220609 13:34:58.994" endtime="20220609 13:34:59.547"/>
+</test>
+<status status="PASS" starttime="20220609 13:34:57.197" endtime="20220609 13:34:59.549"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
