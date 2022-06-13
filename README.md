@@ -12,3 +12,8 @@ Test Cases
 4.Check box "Robot is easy"
 
 5.Click button "Click ME to Finish!!"
+
+
+Run Program with VS Code
+
+form.robot
